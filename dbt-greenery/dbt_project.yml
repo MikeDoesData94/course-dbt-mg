@@ -34,5 +34,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_greenery:
     # Config indicated by + and applies to all files under models/week1/
-    week1:
-      +materialized: view
+    greenery:
+      +materialized: table
