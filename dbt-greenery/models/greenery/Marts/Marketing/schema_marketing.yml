@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_product_orders
+    description: "Intermediate table for marketing analyses"
+    columns:
+        - name: user_guid
+          description: "This is the unique user id for the table"
+          tests:
+            - not_null 
+  - name: fact_product_orders
+    description: "Used to assess some high level market-basket analysis"
+    columns:
+        - name: product_guid
+          description: "This is the unique user id for the table"
+          tests:
+            - not_null 

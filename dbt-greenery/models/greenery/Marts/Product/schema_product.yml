@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_sessions
+    description: "Intermediate table for user session info"
+    columns:
+        - name: user_guid
+          description: "This is the unique user id for the table"
+          tests:
+            - not_null

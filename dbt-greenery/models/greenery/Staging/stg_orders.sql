@@ -9,7 +9,7 @@ SELECT
     id                                   AS order_id
   , order_id                             AS order_guid
   , user_id                              AS user_guid
-  , promo_id
+  , promo_id                             AS promo_guid
   , address_id                           AS address_guid
   , created_at::timestamp                AS created_at
   , order_cost
