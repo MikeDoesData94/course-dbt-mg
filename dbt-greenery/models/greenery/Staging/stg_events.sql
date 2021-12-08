@@ -11,6 +11,7 @@ SELECT
     , event_id                     AS event_guid           
     , session_id                   AS session_guid
     , user_id                      AS user_guid
+    , {{ extract_product_id('page_url') }} AS product_guid
     , event_type
     , page_url
     , created_at::timestamp        AS created_at
